@@ -1,17 +1,14 @@
 name: learn github actions
 on: [push]
+env:
+  SERVER: development
 jobs:
   hello-world:
     runs-on: ubuntu-latest
     steps:
       - run: echo "a code has been pushed"
-on:
-  push:
-    branches:
-      - 'feature/**'
-      - '!master'
-jobs:
   hello-feature-branch:
     runs-on: ubuntu-latest
     steps:
       - run: echo "pushing on feature branch"
+      - run: echo $SERVER
