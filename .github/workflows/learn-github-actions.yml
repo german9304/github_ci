@@ -9,7 +9,7 @@ jobs:
       - run: echo "a code has been pushed"
       - run: echo "this step should only run on main branch"
     if:
-      ${{ github.ref == 'refs/heads/main' }}
+      ${{ github.ref == 'refs/heads/master' }}
   hello-feature-branch:
     runs-on: ubuntu-latest
     steps:
