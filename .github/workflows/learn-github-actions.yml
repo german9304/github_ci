@@ -1,0 +1,6 @@
+name: learn github actions
+on: [push]
+jobs:
+  hello-world:
+    steps:
+      run: echo "hello world"
