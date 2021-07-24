@@ -1,7 +1,21 @@
 name: learn github actions
 on: [push]
+env:
+  SERVER: development
 jobs:
   hello-world:
     runs-on: ubuntu-latest
     steps:
       - run: echo "a code has been pushed"
+      - run: echo "this step should only run on main branch"
+    if:
+      ${{ github.ref == 'refs/heads/main' }}
+  hello-feature-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "pushing on feature branch"
+      - run: echo "this step should only run on feature/branch"
+      - run: echo $GITHUB_REF
+      - run: echo $SERVER
+    if:
+      ${{ github.ref == 'refs/heads/feature/branch' }}
