@@ -3,4 +3,4 @@ on: [push]
 jobs:
   hello-world:
     steps:
-      run: echo "hello world"
+      - run: echo "hello world"
