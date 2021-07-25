@@ -7,7 +7,6 @@ on:
     braches:
       - 'master'
 jobs:
-  name: testing-github-actions
   hello-testing:
     steps:
       - run: echo "branch for testing"
