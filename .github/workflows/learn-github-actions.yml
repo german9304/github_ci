@@ -13,9 +13,10 @@ jobs:
   hello-go:
     runs-on: ubuntu-latest
     container: golang
-    steps:
+    step: 
       - name: go version
       - run: go version
+    steps:
       - name: Checkout repository
       - uses: actions/checkout@v2.3.4
       - name: running the program
