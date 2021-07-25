@@ -19,8 +19,6 @@ jobs:
       - name: running the program
         run: cd cmd
       - run: go run main
-    steps:
-      - run: echo "hello world"
 
   hello-feature-branch:
     runs-on: ubuntu-latest
