@@ -18,7 +18,6 @@ jobs:
       - run: go version
       - name: Checkout repository
       - uses: actions/checkout@v2.3.4
-    steps:
       - name: running the program
       - run: cd cmd
       - run: go run main
