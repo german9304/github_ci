@@ -20,8 +20,8 @@ jobs:
         run : go test -v
         working-directory: ./greeting
   run_program:
-      runs-on: ubuntu-latest
-      container: golang
+    runs-on: ubuntu-latest
+    container: golang
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2.3.4
