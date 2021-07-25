@@ -18,5 +18,5 @@ jobs:
       - run: echo $GITHUB_REF
       - run: echo $GITHUB_BASE_REF
       - run: echo $SERVER
-    # if:
-    #   ${{ github.ref == 'refs/heads/feature/**' }}
+    if:
+      ${{ github.ref == 'refs/heads/feature/branch' }}
