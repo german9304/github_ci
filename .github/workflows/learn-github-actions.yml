@@ -16,6 +16,7 @@ jobs:
       - run: echo "pushing on feature branch"
       - run: echo "this step should only run on feature/branch"
       - run: echo $GITHUB_REF
+      - run: echo $GITHUB_BASE_REF
       - run: echo $SERVER
-    if:
-      ${{ github.ref == 'refs/heads/feature/**' }}
+    # if:
+    #   ${{ github.ref == 'refs/heads/feature/**' }}
