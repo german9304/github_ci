@@ -17,8 +17,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2.3.4
       - name: running the program
-        run: cd cmd
-      - run: ls 
+        # multi-line command
+        run: |
+          cd cmd
+          go run main.go
+
 
   hello-feature-branch:
     runs-on: ubuntu-latest
