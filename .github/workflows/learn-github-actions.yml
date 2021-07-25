@@ -11,7 +11,7 @@ jobs:
     if:
       ${{ github.ref == 'refs/heads/master' }}
   hello-go:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     container: golang
     steps:
       - run: echo "golang container"
