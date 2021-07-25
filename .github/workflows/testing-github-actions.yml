@@ -1,0 +1,13 @@
+name: testing-workflow
+on: 
+  push:
+    branches:
+      - 'feature/**'
+  pull_request:
+    braches:
+      - 'master'
+jobs:
+  name: testing-github-actions
+  hello-testing:
+    steps:
+      - run: echo "branch for testing"
